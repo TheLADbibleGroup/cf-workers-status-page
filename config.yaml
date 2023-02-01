@@ -17,14 +17,12 @@ settings:
 monitors:
   - id: www.ladbible.com # unique identifier
     name: LADbible
-    description: 'You write code. They handle the rest.' # default=empty
     url: 'https://www.ladbible.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
 
   - id: www.sportbible.com
     name: SPORTbible
-    description: 'Built for anything connected to the Internet.'
     url: 'https://www.sportbible.com/'
     method: GET
     expectStatus: 200
