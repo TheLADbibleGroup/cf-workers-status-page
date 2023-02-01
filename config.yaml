@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.ladbiblegroup.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,25 +15,34 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
+  - id: www.ladbible.com # unique identifier
+    name: LADbible
     description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+    url: 'https://www.ladbible.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
+  - id: www.sportbible.com
+    name: SPORTbible
     description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+    url: 'https://www.sportbible.com/'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: www.tyla.com
+    name: Tyla
+    url: 'https://www.tyla.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: www.gamingbible.com
+    name: GAMINGbible
+    url: 'https://www.gamingbible.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: www.unilad.com
+    name: UNILAD
+    url: 'https://www.unilad.com/'
     method: GET
     expectStatus: 200
