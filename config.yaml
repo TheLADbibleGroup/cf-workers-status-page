@@ -44,3 +44,9 @@ monitors:
     url: 'https://www.unilad.com/'
     method: GET
     expectStatus: 200
+
+  - id: www.uniladtech.com
+    name: UNILAD Tech
+    url: 'https://www.uniladtech.com/'
+    method: GET
+    expectStatus: 200
